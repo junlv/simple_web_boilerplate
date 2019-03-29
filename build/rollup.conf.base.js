@@ -1,6 +1,6 @@
 const resolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs') //兼容性
-// const uglify = require('rollup-plugin-uglify').uglify
+const terser = require('rollup-plugin-terser').terser //兼容性
 const babel = require('rollup-plugin-babel')
 const replace = require('rollup-plugin-replace')
 const path = require('path')
@@ -40,6 +40,6 @@ module.exports = {
       babelrc: true,
       runtimeHelpers: true
     }),
-    // terser()
+    terser()
   ]
 }

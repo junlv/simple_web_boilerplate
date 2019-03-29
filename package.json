@@ -6,15 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./dist",
-    "compile_less": "node scripts/less_compiler.js",
-    "watch_less": "onchange -f 'change'  -v -i -k  'src/less/**/*.less' -- node scripts/less_compiler.js",
-    "watch_js": "onchange -f 'change'  -v -i -k  'src/less/**/*.less' -- node scripts/less_compiler.js",
+    "compile_less": "node scripts/compile_less.js",
+    "watch_less": "onchange -f 'change'  -v -i -k  'src/less/**/*.less' -- node scripts/compile_less.js",
+    "watch_js": "onchange -f 'change'  -v -i -k  'src/less/**/*.less' -- node scripts/compile_less.js",
     "http_server": "http-server -p 63345 ./dist",
     "browser_sync": "browser-sync start --server --files 'dist/**' --single --port 63345",
     "debug": "npm-run-all --parallel http_server watch_less",
-    "copy_asset": "node scripts/copy_asset.js",
-    "build": "npm run clean && rollup -c ./build/rollup.conf.pro.js && npm run compile_less && npm run  copy_asset",
-    "dev": "npm run clean && rollup -c ./build/rollup.conf.dev.js && npm run compile_less && npm run  copy_asset"
+    "copy_statict_folder": "node scripts/copy_statict_folder.js",
+    "build": "npm run clean && rollup -c ./build/rollup.conf.pro.js && npm run compile_less && npm run  copy_statict_folder",
+    "dev": "npm run clean && rollup -c ./build/rollup.conf.dev.js && npm run compile_less && npm run  copy_statict_folder && npm run debug"
   },
   "keywords": [],
   "author": "",

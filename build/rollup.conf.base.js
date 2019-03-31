@@ -6,7 +6,7 @@ const replace = require('rollup-plugin-replace')
 const path = require('path')
 const alias = require('rollup-plugin-alias')
 const isProduction = process.env.NODE_ENV === 'production'
-const pathResolve = p => path.resolve(__dirname, p)
+const pathResolve = p => path.resolve(__dirname + '/../', p)
 const globals = { vue: 'Vue' };
 
 module.exports = {

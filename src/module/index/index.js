@@ -6,13 +6,17 @@ const templateApp = /*html*/ `<div  id="App" class="App">
     <div class="color3 mm-big">
     {{ page }}
     </div>
+    <home></home>
   </div>
  </div>
 `
 
+import home from '@/pages/history/history.js'
+
 let App =  {
   name: 'App',
   components: {
+    home
   },
   data() {
     return {

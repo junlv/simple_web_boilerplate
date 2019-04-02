@@ -1,5 +1,5 @@
 import * as types from '../types'
-import { Loading } from 'element-ui';
+// import { Loading } from 'element-ui';
 // import { loadFromlLocal, savaToLocal } from '../../utils/storage'
 
 const state = {

@@ -7,12 +7,20 @@ const path = require('path')
 const alias = require('rollup-plugin-alias')
 const isProduction = process.env.NODE_ENV === 'production'
 const pathResolve = p => path.resolve(__dirname + '/../', p)
-const globals = { vue: 'Vue',Bee: 'Bee',VueRouter:'VueRouter' };
+const globals = { 
+vue: 'Vue',
+Bee: 'Bee',
+VueRouter:'VueRouter',
+vuex:'Vuex',
+vant:'vant',
+};
 
 module.exports = {
   external: [
     'vue',
     'Bee',
+    'vuex',
+    'vant',
     'VueRouter'
   ],
   input: './src/module/main/index.js',

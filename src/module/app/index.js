@@ -1,5 +1,8 @@
 
 import Vue from 'vue'
+import router from '@/router/index.js'
+
+
 
 const templateApp = /*html*/ `<div  id="App" class="App"> 
   <div  class="app" >
@@ -47,15 +50,11 @@ let App =  {
 
 
 
-
-
-
-
-
 new Vue({
   el: '#app',
   template: '<App></App>',
   components: {
       App
-  }
+  },
+  router
 })

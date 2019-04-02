@@ -1,13 +1,12 @@
-// https://github.com/shadowOfCode/bee.js
-
 /**
  * 字符串常用工具类
  * Author:LinBilin
  * Date:2017-12-23
  */
-export const Bee = {}
+(function() {
+	var Bee = Bee || {};
 	//区域
-	Bee.areas =  {};
+	Bee.areas = window.BEE_AREAS || {};
 	//PhoneUtils命名空间
 	Bee.PhoneUtils = {
 		phoneRegexs: {
@@ -1265,5 +1264,6 @@ export const Bee = {}
 			return obj;
 		}
 	};
-
-export default Bee
+	//暴露给window
+	window['Bee'] = Bee;
+})();

@@ -7,11 +7,13 @@ const path = require('path')
 const alias = require('rollup-plugin-alias')
 const isProduction = process.env.NODE_ENV === 'production'
 const pathResolve = p => path.resolve(__dirname + '/../', p)
-const globals = { vue: 'Vue' };
+const globals = { vue: 'Vue',Bee: 'Bee',VueRouter:'VueRouter' };
 
 module.exports = {
   external: [
-    'vue'
+    'vue',
+    'Bee',
+    'VueRouter'
   ],
   input: './src/module/main/index.js',
   output: {
@@ -20,9 +22,11 @@ module.exports = {
     format: 'umd',
     name: 'app',
     sourcemap: false,
-    treeshake: true,
+    treeshake: true
   },
+  inlineDynamicImports:true,
   plugins: [
+    
     alias({
       'vue': require.resolve('vue/dist/vue.js'),
       resolve: ['.jsx', '.js','.vue','.css','.less'],
@@ -38,7 +42,7 @@ module.exports = {
     babel({
       exclude: 'node_modules/**',
       babelrc: true,
-      runtimeHelpers: true
+      runtimeHelpers: true,
     }),
     terser()
   ]

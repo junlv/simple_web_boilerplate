@@ -1,5 +1,7 @@
 
 import Vue from 'vue'
+import router from '@/router/index.js'
+
 
 const templateApp = /*html*/ `<div  id="App" class="App"> 
   <div  class="app" >
@@ -16,7 +18,7 @@ let App =  {
   },
   data() {
     return {
-      page:'我是第三个文件',
+      page:'我是第222个文件',
       nomore:false
     };
   },
@@ -42,5 +44,6 @@ new Vue({
   template: '<App></App>',
   components: {
       App
-  }
+  },
+  router
 })

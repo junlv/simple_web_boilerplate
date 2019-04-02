@@ -1,5 +1,5 @@
 import config from './xhr/config'
-import Bee from '@/util/bee'
+import Bee from 'Bee'
 import Msg from '@/util/message'
 import $store from '@/vuex/store'
 // import Vue from 'vue'

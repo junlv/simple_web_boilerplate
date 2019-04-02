@@ -1,6 +1,6 @@
 import xhr from './xhr/fetch'
 import config from './xhr/config'
-import Bee from '../util/bee'
+import Bee from 'Bee'
 // import ProxyMiddleware  from './middlewares'
 class BaseService {
   constructor ({ paging = false, page = 1, pagesize = 20 } = {}) {

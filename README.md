@@ -2,7 +2,7 @@
 simple_web_boilerplate base vue 
 
 
-## instruction
+## include
 ### 1 rollup project ，NOT webpack 
     webpack projct is huge and complicated and difficult to maintain. 
     especially compared to rollup.   ** ES6 TO ES5 **   rollup is best  best choice.
@@ -22,6 +22,9 @@ simple_web_boilerplate base vue
             index.html
             index.js
     it will compile and export to dist/a.html b.html etc ....
+
+### 4 vue-router
+### 5 vuex
 MORE TODO
 ......
 

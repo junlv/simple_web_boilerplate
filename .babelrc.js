@@ -14,6 +14,7 @@ module.exports = {
       helpers: true,
       regenerator: true,
       useESModules: false
-    }]
+    }],
+    ["@babel/plugin-syntax-dynamic-import"]
   ]
 }

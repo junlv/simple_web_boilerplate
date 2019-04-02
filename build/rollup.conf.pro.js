@@ -6,7 +6,7 @@ process.env.NODE_ENV = 'production';
 
 const configbase = require('./rollup.conf.base');
 
-var pages = utils.getEntries('./src/module/**/*.js',"./dist/static/js/","./dist/views/")
+var pages = utils.getEntries('./src/module/**/*.js',"./dist/static/app/","./dist/views/")
 var modules = []
 
 pages.forEach( (item) =>{

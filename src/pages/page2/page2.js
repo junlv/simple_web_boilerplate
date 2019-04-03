@@ -1,6 +1,5 @@
-
-/*********  template  *********/
-const templatepage2 = /*html*/ `<div class="page-history"> 
+/** *******  template  *********/
+const templatepage2 = /* html*/ `<div class="page-history"> 
   <!-- <topnav></topnav> -->
       <div class="history-wrap">
           {{news}}
@@ -9,20 +8,20 @@ const templatepage2 = /*html*/ `<div class="page-history">
  </div>
 `
 // import Service from '@/api/post.service.js'
-/*********  script  *********/
+/** *******  script  *********/
 export default {
-  name: 'page2',
-  components: {
-    
-  },
-  data() {
-    return {
-      historyList: [],
-      page:1,
-      news:'page2'
-    };
-  },
-  methods: {
+    name: 'page2',
+    components: {
+
+    },
+    data() {
+        return {
+            historyList: [],
+            page: 1,
+            news: 'page2'
+        };
+    },
+    methods: {
     // requestNews () {
     //     let self = this
     //     Service.fetch('secret/secretsmyfollow')
@@ -33,10 +32,8 @@ export default {
     //       console.warn(err)
     //     })
     //   },
-  },
-  template: templatepage2,
-  mounted() {
-  },
-  created() {
-  },
+    },
+    template: templatepage2,
+    mounted() {},
+    created() {},
 };

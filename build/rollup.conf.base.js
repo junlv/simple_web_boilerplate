@@ -1,18 +1,19 @@
 const resolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs') //兼容性
 const terser = require('rollup-plugin-terser').terser //兼容性
+const uglify = require('rollup-plugin-uglify').uglify
 const babel = require('rollup-plugin-babel')
 const replace = require('rollup-plugin-replace')
 const path = require('path')
 const alias = require('rollup-plugin-alias')
 const isProduction = process.env.NODE_ENV === 'production'
 const pathResolve = p => path.resolve(__dirname + '/../', p)
-const globals = { 
-vue: 'Vue',
-Bee: 'Bee',
-VueRouter:'VueRouter',
-vuex:'Vuex',
-vant:'vant',
+const globals = {
+  vue: 'Vue',
+  Bee: 'Bee',
+  VueRouter: 'VueRouter',
+  vuex: 'Vuex',
+  vant: 'vant',
 };
 
 module.exports = {
@@ -32,12 +33,12 @@ module.exports = {
     sourcemap: false,
     treeshake: true
   },
-  inlineDynamicImports:true,
+  inlineDynamicImports: true,
   plugins: [
-    
+
     alias({
       'vue': require.resolve('vue/dist/vue.js'),
-      resolve: ['.jsx', '.js','.vue','.css','.less'],
+      resolve: ['.jsx', '.js', '.vue', '.css', '.less'],
       '@': pathResolve('src')
     }),
     replace({
@@ -52,6 +53,7 @@ module.exports = {
       babelrc: true,
       runtimeHelpers: true,
     }),
-    terser()
+    // terser()
+    (isProduction && uglify())
   ]
 }

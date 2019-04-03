@@ -16,7 +16,6 @@
     "pro": "npm run fix:styles &&  npm run build ",
     "dev": "npm run clean && npm run compile_less && npm run copy_statict_folder && npm run debug",
     "dev2": "npm run clean && rollup -c ./build/rollup.conf.dev.js && npm run compile_less && npm run  copy_statict_folder && npm run debug",
-
     "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
     "fix:styles": "prettier-stylelint --write 'src/less/**/*.less' "
   },

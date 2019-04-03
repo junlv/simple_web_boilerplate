@@ -1,341 +1,384 @@
-
-.acc   { align-content  : center ;}
-.acfe  { align-content: flex-end   ;}
-.acfs  { align-content: flex-start ;}
-
-.aifs  { align-items    :  flex-start;}
-.aife  { align-items    :  flex-end;}
-.aic   { align-items    :  center;}
-
-.asfe { align-self: flex-end;}
-.asfs { align-self: flex-end;}
-.asc { align-self: center;}
-
-.pn-r { position: relative;}
-.pn-a { position: absolute;}
-.pn-f { position: fixed;}
-
-.dy-n { display:none; }
-.dy-i { display:inline; }
-.dy-ib { display:inline-block; }
-.dy-f { display:flex; }
-.dy-b { display:block; }
-
-.ht-14 { height:14px; }
-.ht-16 { height:16px; }
-.ht-100p { height:100%; }
-
-.lh14{line-height:14px;}
-.lh16{line-height:16px;}
-.lh18{line-height:18px;}
-.lh20{line-height:20px;}
-.lh22{line-height:22px;}
-.lh24{line-height:24px;}
-
-
-.ta-c { text-align: center;}
-.ta-r { text-align: right;}
-.ta-l { text-align: left;}
-
-
-.mn-10 { margin: 10px;}
-
-.ml10 {  margin-left:10px; }
-.mr10 {  margin-right:10px; }
-.mb10 {  margin-bottom:10px; }
-.mt10 {  margin-top:10px; }
-
-
-.mg-0{margin:0;}
-.ml1{margin-left:1px;}
-.ml2{margin-left:2px;}
-.ml5{margin-left:5px;}
-.ml10{margin-left:10px;}
-.ml15{margin-left:15px;}
-.ml20{margin-left:20px;}
-.ml30{margin-left:30px;}
-.mr1{margin-right:1px;}
-.mr2{margin-right:2px;}
-.mr5{margin-right:5px;}
-.mr10{margin-right:10px;}
-.mr15{margin-right:15px;}
-.mr20{margin-right:20px;}
-.mr30{margin-right:30px;}
-.mb0i{ margin-bottom: 0px !important; }
-.mt1{margin-top:1px;}
-.mt2{margin-top:2px;}
-.mt5{margin-top:5px;}
-.mt10{margin-top:10px;}
-.mt15{margin-top:15px;}
-.mt20{margin-top:20px;}
-.mt30{margin-top:30px;}
-.mb0{margin-bottom:0px;}
-.mb1{margin-bottom:1px;}
-.mb2{margin-bottom:2px;}
-.mb5{margin-bottom:5px;}
-.mb10{margin-bottom:10px;}
-.mb15{margin-bottom:15px;}
-.mb20{margin-bottom:20px;}
-.mb30{margin-bottom:30px;}
-.mb40{margin-bottom:40px;}
-
-
-.pg-0 { padding: 20px;}
-.pg-10 { padding: 10px;}
-.pg-16 { padding: 16px;}
-.pg-20 { padding: 20px;}
-.pg-30 { padding: 30px;}
-.pg-40 { padding: 40px;}
-
-.pl20  { padding-left: 20px;}
-
-
-.ft-r { float:right};
-.ft-l { float:left};
-.ft-l { float:none};
-
-.maxh600 { max-height: 650px;}
-.maxh650 { max-height: 650px;}
-.maxh800 { max-height: 800px;}
-
-.minh600 { max-height: 650px;}
-.minh650 { max-height: 650px;}
-.minh800 { max-height: 800px;}
-
-.oys { overflow-y: scroll; }
-.oxs { overflow-x: scroll; }
-.ow-s { overflow: scroll; }
-
-.cr-p { cursor: pointer; }
-.cr-d { cursor:default }
-
-.fwb { font-weight: bold;}
-.fwn { font-weight: normal;}
-
-.jcc { justify-content: center};
-.jcfe { justify-content: flex-end};
-.jcfs { justify-content: flex-start};
-
-
-
-.fs12 { font-size: 12px;}
-.fs20 { font-size: 20px;}
-.fs40 { font-size: 40px;}
-  
-.line-wrap {
-    word-wrap: break-word;
-    word-break: normal;
+.acfe {
+    align-content: flex-end;
 }
-  
-  .mw100 { min-width: 100px;}
-  .mw120 { min-width: 120px;}
-    
-  .maxw0120 { max-width: 120px;} /** 特殊*/
 
+.acfs {
+    align-content: flex-start;
+}
 
-/** 
-animation
-animation-delay
-animation-direction
-animation-duration
-animation-fill-mode
-animation-iteration-count
-animation-name
-animation-play-state
-animation-timing-function
-backface-visibility
-background
-background-attachment
-background-blend-mode
-background-clip
-background-color
-background-image
-background-origin
-background-position
-background-repeat
-background-size
-border
-border-bottom
-border-bottom-color
-border-bottom-left-radius
-border-bottom-right-radius
-border-bottom-style
-border-bottom-width
-border-collapse
-border-color
-border-image
-border-image-outset
-border-image-repeat
-border-image-slice
-border-image-source
-border-image-width
-border-left
-border-left-color
-border-left-style
-border-left-width
-border-radius
-border-right
-border-right-color
-border-right-style
-border-right-width
-border-spacing
-border-style
-border-top
-border-top-color
-border-top-left-radius
-border-top-right-radius
-border-top-style
-border-top-width
-border-width
-bottom
-box-decoration-break
-box-shadow
-box-sizing
-caption-side
-caret-color
-@charset
-clear
-clip
-color
-column-count
-column-fill
-column-gap
-column-rule
-column-rule-color
-column-rule-style
-column-rule-width
-column-span
-column-width
-columns
-content
-counter-increment
-counter-reset
-cursor
-direction
-display
-empty-cells
-filter
-flex
-flex-basis
-flex-direction
-flex-flow
-flex-grow
-flex-shrink
-flex-wrap
-float
-font
-@font-face
-font-family
-font-kerning
-font-size
-font-size-adjust
-font-stretch
-font-style
-font-variant
-font-weight
-grid
-grid-area
-grid-auto-columns
-grid-auto-flow
-grid-auto-rows
-grid-column
-grid-column-end
-grid-column-gap
-grid-column-start
-grid-gap
-grid-row
-grid-row-end
-grid-row-gap
-grid-row-start
-grid-template
-grid-template-areas
-grid-template-columns
-grid-template-rows
-hanging-punctuation
-height
-hyphens
-@import
-isolation
-justify-content
-@keyframes
-left
-letter-spacing
-line-height
-list-style
-list-style-image
-list-style-position
-list-style-type
-margin
-margin-bottom
-margin-left
-margin-right
-margin-top
-max-height
-max-width
-@media
-min-height
-min-width
-mix-blend-mode
-object-fit
-object-position
-opacity
-order
-outline
-outline-color
-outline-offset
-outline-style
-outline-width
-overflow
-overflow-x
-overflow-y
-padding
-padding-bottom
-padding-left
-padding-right
-padding-top
-page-break-after
-page-break-before
-page-break-inside
-perspective
-perspective-origin
-pointer-events
-position
-quotes
-resize
-right
-scroll-behavior
-tab-size
-table-layout
-text-align
-text-align-last
-text-decoration
-text-decoration-color
-text-decoration-line
-text-decoration-style
-text-indent
-text-justify
-text-overflow
-text-shadow
-text-transform
-top
-transform
-transform-origin
-transform-style
-transition
-transition-delay
-transition-duration
-transition-property
-transition-timing-function
-unicode-bidi
-user-select
-vertical-align
-visibility
-white-space
-width
-word-break
-word-spacing
-word-wrap
-writing-mode
-z-index
+.aifs {
+    align-items: flex-start;
+}
 
-**/
+.aife {
+    align-items: flex-end;
+}
+
+.aic {
+    align-items: center;
+}
+
+.asfe {
+    align-self: flex-end;
+}
+
+.asfs {
+    align-self: flex-end;
+}
+
+.asc {
+    align-self: center;
+}
+
+.pn-r {
+    position: relative;
+}
+
+.acc {
+    align-content: center;
+}
+
+.pn-a {
+    position: absolute;
+}
+
+.pn-f {
+    position: fixed;
+}
+
+.dy-n {
+    display: none;
+}
+
+.dy-i {
+    display: inline;
+}
+
+.dy-ib {
+    display: inline-block;
+}
+
+.dy-f {
+    display: flex;
+}
+
+.dy-b {
+    display: block;
+}
+
+.ht-14 {
+    height: 14px;
+}
+
+.ht-16 {
+    height: 16px;
+}
+
+.ht-100p {
+    height: 100%;
+}
+
+.lh14 {
+    line-height: 14px;
+}
+
+.lh16 {
+    line-height: 16px;
+}
+
+.lh18 {
+    line-height: 18px;
+}
+
+.lh20 {
+    line-height: 20px;
+}
+
+.lh22 {
+    line-height: 22px;
+}
+
+.lh24 {
+    line-height: 24px;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.ta-r {
+    text-align: right;
+}
+
+.ta-l {
+    text-align: left;
+}
+
+.mn-10 {
+    margin: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mg-0 {
+    margin: 0;
+}
+
+.ml1 {
+    margin-left: 1px;
+}
+
+.ml2 {
+    margin-left: 2px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.mr1 {
+    margin-right: 1px;
+}
+
+.mr2 {
+    margin-right: 2px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mb0i {
+    margin-bottom: 0 !important;
+}
+
+.mt1 {
+    margin-top: 1px;
+}
+
+.mt2 {
+    margin-top: 2px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mb1 {
+    margin-bottom: 1px;
+}
+
+.mb2 {
+    margin-bottom: 2px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.pg-0 {
+    padding: 20px;
+}
+
+.pg-10 {
+    padding: 10px;
+}
+
+.pg-16 {
+    padding: 16px;
+}
+
+.pg-20 {
+    padding: 20px;
+}
+
+.pg-30 {
+    padding: 30px;
+}
+
+.pg-40 {
+    padding: 40px;
+}
+
+.pg-45 {
+    padding: 45px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.ft-r {
+    float: right;
+}
+
+.ft-l {
+    float: left;
+}
+
+.ft-n {
+    float: none;
+}
+
+.maxh600 {
+    max-height: 650px;
+}
+
+.maxh650 {
+    max-height: 650px;
+}
+
+.maxh800 {
+    max-height: 800px;
+}
+
+.minh600 {
+    max-height: 650px;
+}
+
+.minh650 {
+    max-height: 650px;
+}
+
+.minh800 {
+    max-height: 800px;
+}
+
+.oys {
+    overflow-y: scroll;
+}
+
+.oxs {
+    overflow-x: scroll;
+}
+
+.ow-s {
+    overflow: scroll;
+}
+
+.cr-p {
+    cursor: pointer;
+}
+
+.cr-d {
+    cursor: default;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.fwn {
+    font-weight: normal;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcfe {
+    justify-content: flex-end;
+}
+
+.jcfs {
+    justify-content: flex-start;
+}
+
+.fs12 {
+    font-size: 12px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fs40 {
+    font-size: 40px;
+}
+
+.line-wrap {
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+.mw100 {
+    min-width: 100px;
+}
+
+.mw120 {
+    min-width: 120px;
+}
+
+.maxw0120 {
+    max-width: 120px;
+}

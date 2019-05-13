@@ -22,18 +22,18 @@ export default {
         };
     },
     methods: {
-    // requestNews () {
-    //     let self = this
-    //     Service.fetch('secret/secretsmyfollow')
-    //     .then((data) => {
-    //       console.log(data)
-    //       self.news = data.data.news
-    //     }).catch((err)=>{
-    //       console.warn(err)
-    //     })
-    //   },
+        // requestNews () {
+        //     let self = this
+        //     Service.fetch('secret/secretsmyfollow')
+        //     .then((data) => {
+        //       console.log(data)
+        //       self.news = data.data.news
+        //     }).catch((err)=>{
+        //       console.warn(err)
+        //     })
+        //   },
     },
     template: templatepage2,
-    mounted() {},
-    created() {},
+    mounted() { },
+    created() { },
 };

@@ -14,6 +14,7 @@ const templateApp = /*html*/ `<div  id="App" class="App">
    {{isLoading}} {{ page }} 
     <button @click="forwardPage1"> Page1</button>
     <button @click="forwardPage2"> Page2 </button>
+    <button @click="forwardPage33"> I cash </button>
     <Button @click="forwardPage3" type="primary">Primary</Button>
     </div>
     <router-view> </router-view>
@@ -48,15 +49,19 @@ let App = {
       })
     },
     forwardPage2(more) {
-      // this.$router.push({ name: 'page2' })
       this.$store.dispatch('setLoading', true)
+    },
+    forwardPage33(more) {
+      this.$router.push({
+        name: 'page3'
+      })
     },
     loadHistoryData(more) {
       console.log('hello word')
     },
   },
   template: templateApp,
-  mounted() {},
+  mounted() { },
   created() {
     this.page = Bee.StringUtils.rndNum(10)
   },
